@@ -12,3 +12,12 @@ really easy to hit limit for integers.
 
 In Python if integer is too big - big integer is
 used instead. Note that this will fail in R.
+
+# Use Pascal Triangle Rule with Recursion
+
+We can use Pascal rule and recursively compute combinations,
+with pure recursive combination it is really easy to hit
+maximum recursion depth.
+
+The function has a wrapper function - common pattern for
+functional programming.
