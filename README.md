@@ -31,3 +31,11 @@ top down or bottom up implementation(still in progress...). See
 the code.
 
 The test for these implementations can be found in `test_choose_triangle.py`.
+
+# Testing
+
+In bash:
+```
+py.test
+```
+Some of the tests are a bit slow now(around 10 seconds) and some are skipped.
