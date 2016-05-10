@@ -39,3 +39,11 @@ In bash:
 py.test
 ```
 Some of the tests are a bit slow now(around 10 seconds) and some are skipped.
+
+# Timing
+
+We can compare impementation of Pascal rule:
+```
+python time_triangle_implementations.py
+```
+Note that bottom up approach still fails, because it is not implemented.
