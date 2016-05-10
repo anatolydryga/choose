@@ -3,9 +3,7 @@ from choose_triangle_bottomUp_DP import *
 from choose_triangle_topDown_DP import *
 import pytest
 
-#chooses = [choose_triangle_recursive, choose_triangle_topDown, choose_triangle_bottomUp]
-chooses = [choose_triangle_recursive, choose_triangle_topDown]
-#chooses = [choose_triangle_recursive]
+chooses = [choose_triangle_recursive, choose_triangle_topDown, choose_triangle_bottomUp]
 
 def test_small_examples():
     for choose in chooses:
@@ -52,12 +50,12 @@ def test_selecting_n_from_n():
         for n in range(1, 10):
             assert choose(n, n) == 1
 
-@pytest.mark.skip()
+@pytest.mark.skip("recursive implementation takes too long > 8 sec")
 def test_poker_hand():
     for choose in chooses:
         assert choose(52, 5) ==  2598960
 
-@pytest.mark.skip()
+@pytest.mark.skip("recursive implementation reaches stackoverflow")
 def test_very_large():
     for choose in chooses:
         choose(1000, 5)

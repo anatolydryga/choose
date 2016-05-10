@@ -14,7 +14,14 @@ for name, choose in chooses.items():
     end = timer()
     print name + " takes : " + str(end - start)
 
-#@pytest.mark.skip()
-#def test_very_large():
-#    for choose in chooses:
-#        choose(1000, 5)
+print
+print "Dynamic Programming Comparison"
+for name, choose in chooses.items():
+    if name == "recursive": continue
+    start = timer()
+    for i in range(0, 10):
+        for j in range(0, 50):
+            choose(500, j)
+    end = timer()
+    print name + " takes : " + str(end - start)
+
